@@ -41,42 +41,42 @@ function App() {
 
       <HeaderComponent />
 
-      <Routes>
-        {/* with chat box */}
-        <Route element={<RoutesWithUserChatComponents />}>
-          {/* Public Pages */}
-          <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/Login" element={<LoginPage />} />
-          <Route path="/ProductList" element={<ProductListPage />} />
-          <Route path="/ProductDetails" element={<ProductDetailsPage />} />
-          {/* <Route path="/ProductDetails/ :id" element={<ProductDetailsPage />} /> */}
-          <Route path="/Register" element={<RegisterationPage />} />
-        </Route>
+//        <Routes>
+//         {/* with chat box */}
+//         <Route element={<RoutesWithUserChatComponents />}>
+//           {/* Public Pages */}
+//           <Route path="/" element={<HomePage />} />
+//           <Route path="/cart" element={<CartPage />} />
+//           <Route path="/Login" element={<LoginPage />} />
+//           <Route path="/ProductList" element={<ProductListPage />} />
+//           <Route path="/ProductDetails" element={<ProductDetailsPage />} />
+//           {/* <Route path="/ProductDetails/ :id" element={<ProductDetailsPage />} /> */}
+//           <Route path="/Register" element={<RegisterationPage />} />
+//         </Route>
 
-        {/* User Pages */}
-        <Route element={<ProtectedRouteComponents admin={false} />}>                 {/*makes these user details protected for login */}
-          <Route path="/user" element={<UserProfilePage />} />
-          <Route path="/user/cart-details" element={<UserCartDetailsPage />} />
-          <Route path="/user/my-orders" element={<UserOrderPage />} />
-          <Route path="/user/order-details" element={<UserOrderDetailsPage />} />
-        </Route>
+//         {/* User Pages */}
+//         <Route element={<ProtectedRouteComponents admin={false} />}>                 {/*makes these user details protected for login */}
+//           <Route path="/user" element={<UserProfilePage />} />
+//           <Route path="/user/cart-details" element={<UserCartDetailsPage />} />
+//           <Route path="/user/my-orders" element={<UserOrderPage />} />
+//           <Route path="/user/order-details" element={<UserOrderDetailsPage />} />
+//         </Route>
 
-        {/* Admin Pages */}
-        <Route element={<ProtectedRouteComponents admin={true} />}>                 {/*makes these user details protected for login */}
-          <Route path="/admin/user" element={<AdminUsersPage />} />
-          <Route path="/admin/edit-user" element={<AdminEditUserPage />} />
-          <Route path="/admin/products" element={<AdminProductsPage />} />
-          <Route path="/admin/create-products" element={<AdminCreateProductPage />} />
-          <Route path="/admin/edit-products" element={<AdminEditProductPage />} />
-          <Route path="/admin/orders" element={<AdminOrdersPage />} />
-          <Route path="/admin/orders-detail" element={<AdminOrdersDetailPage />} />
-          <Route path="/admin/chat" element={<AdminChatsPage />} />
-          <Route path="/admin/analytics" element={<AdminAnalyticsPage />} />
+//         {/* Admin Pages */}
+//         <Route element={<ProtectedRouteComponents admin={true} />}>                 {/*makes these user details protected for login */}
+//           <Route path="/admin/user" element={<AdminUsersPage />} />
+//           <Route path="/admin/edit-user" element={<AdminEditUserPage />} />
+//           <Route path="/admin/products" element={<AdminProductsPage />} />
+//           <Route path="/admin/create-products" element={<AdminCreateProductPage />} />
+//           <Route path="/admin/edit-products" element={<AdminEditProductPage />} />
+//           <Route path="/admin/orders" element={<AdminOrdersPage />} />
+//           <Route path="/admin/orders-detail" element={<AdminOrdersDetailPage />} />
+//           <Route path="/admin/chat" element={<AdminChatsPage />} />
+//           <Route path="/admin/analytics" element={<AdminAnalyticsPage />} />
 
-        </Route>
-        <Route path="*" element="Page not exist error 404" />           /*handling for wrong page url*/
-      </Routes>
+//         </Route>
+//         <Route path="*" element="Page not exist error 404" />           /*handling for wrong page url*/
+//       </Routes> 
 
       <FooterComponent />
 
